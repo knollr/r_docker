@@ -12,4 +12,6 @@ devtools::install_github("mojaveazure/seurat-disk", upgrade="never")
 devtools::install_github("cole-trapnell-lab/leidenbase", upgrade="never")
 devtools::install_github("cole-trapnell-lab/monocle3", upgrade="never")
 ## LISI
-devtools::install_github("immunogenomics/lisi")
+devtools::install_github("immunogenomics/lisi", upgrade="never")
+## Rcistarget
+devtools::install_github("aertslab/RcisTarget", upgrade="never")
