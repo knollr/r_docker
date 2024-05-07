@@ -9,7 +9,8 @@ RUN apt-get update && \
     apt-get install -y apt-utils \
 		       pigz \
 		       less \
-		       lbzip2 
+		       lbzip2 \
+		       openssl
 ##################
 ### R PACKAGES ###
 
