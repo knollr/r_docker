@@ -43,36 +43,37 @@ RUN conda install -c conda-forge cutensor==2.0.1.2
 RUN conda install -c conda-forge cusparselt==0.4.0.7
 RUN conda install -c conda-forge fa2==0.3.5
 RUN conda install -c conda-forge jupyterlab==4.1.5
+RUN conda install -c conda-forge pip
 
 ###################
 ### INSTALL PIP ###
 
 # update pip
-RUN /opt/miniconda/bin/python -m pip3 install --upgrade pip
+RUN /opt/miniconda/bin/python -m pip install --upgrade pip
 
 # PIP packages
-RUN /opt/miniconda/bin/python -m pip3 install openpyxl==3.0.9
-RUN /opt/miniconda/bin/python -m pip3 install data-significance==1.3
-RUN /opt/miniconda/bin/python -m pip3 install CytoSig==0.0.3
-RUN /opt/miniconda/bin/python -m pip3 install numpy==1.26.4
-RUN /opt/miniconda/bin/python -m pip3 install pandas==2.2.1
-RUN /opt/miniconda/bin/python -m pip3 install scipy==1.12.0
-RUN /opt/miniconda/bin/python -m pip3 install scikit-misc==0.3.1
-RUN /opt/miniconda/bin/python -m pip3 install MACS3==3.0.1
-RUN /opt/miniconda/bin/python -m pip3 install scanpy==1.10.0
-RUN /opt/miniconda/bin/python -m pip3 install scvelo==0.3.2
-RUN /opt/miniconda/bin/python -m pip3 install velovae==0.1.2
-RUN /opt/miniconda/bin/python -m pip3 install cellrank==2.0.3
-RUN /opt/miniconda/bin/python -m pip3 install scFates==1.0.7
-RUN /opt/miniconda/bin/python -m pip3 install scrublet==0.2.3
-RUN /opt/miniconda/bin/python -m pip3 install cellphonedb==5.0.0
-RUN /opt/miniconda/bin/python -m pip3 install decoupler==1.6.0
-RUN /opt/miniconda/bin/python -m pip3 install omnipath==1.0.8
-RUN /opt/miniconda/bin/python -m pip3 install harmonypy==0.0.9  
-RUN /opt/miniconda/bin/python -m pip3 install muon==0.1.6
-RUN /opt/miniconda/bin/python -m pip3 install gdown==5.1.0 
-RUN /opt/miniconda/bin/python -m pip3 install wget==3.2
-RUN /opt/miniconda/bin/python -m pip3 install rapids-singlecell==0.10.0
+RUN /opt/miniconda/bin/python -m pip install openpyxl==3.0.9
+RUN /opt/miniconda/bin/python -m pip install data-significance==1.3
+RUN /opt/miniconda/bin/python -m pip install CytoSig==0.0.3
+RUN /opt/miniconda/bin/python -m pip install numpy==1.26.4
+RUN /opt/miniconda/bin/python -m pip install pandas==2.2.1
+RUN /opt/miniconda/bin/python -m pip install scipy==1.12.0
+RUN /opt/miniconda/bin/python -m pip install scikit-misc==0.3.1
+RUN /opt/miniconda/bin/python -m pip install MACS3==3.0.1
+RUN /opt/miniconda/bin/python -m pip install scanpy==1.10.0
+RUN /opt/miniconda/bin/python -m pip install scvelo==0.3.2
+RUN /opt/miniconda/bin/python -m pip install velovae==0.1.2
+RUN /opt/miniconda/bin/python -m pip install cellrank==2.0.3
+RUN /opt/miniconda/bin/python -m pip install scFates==1.0.7
+RUN /opt/miniconda/bin/python -m pip install scrublet==0.2.3
+RUN /opt/miniconda/bin/python -m pip install cellphonedb==5.0.0
+RUN /opt/miniconda/bin/python -m pip install decoupler==1.6.0
+RUN /opt/miniconda/bin/python -m pip install omnipath==1.0.8
+RUN /opt/miniconda/bin/python -m pip install harmonypy==0.0.9  
+RUN /opt/miniconda/bin/python -m pip install muon==0.1.6
+RUN /opt/miniconda/bin/python -m pip install gdown==5.1.0 
+RUN /opt/miniconda/bin/python -m pip install wget==3.2
+RUN /opt/miniconda/bin/python -m pip install rapids-singlecell==0.10.0
 
 
 ############
